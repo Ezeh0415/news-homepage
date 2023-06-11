@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     padding: 13px;
+}
+
+#nav-header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+#mobile-nav nav ol{
+    display: none;
+    list-style: none;
+}
+
+nav ul{
+    display: grid;
+    flex-direction: row;
+    margin-top: 0.8rem;
+    margin-left: 31.4rem;
+}
+
+nav ul li{
+    margin: 14px;
+}
+
+#mobileimgdiv img{
+    display:none;
+    width:500px;
+}
+
+#imgdiv{
+    display: flex;
+}
+
+#imgdiv img{
+    width:650px;
+    height: 300px;
+}
+
+#imgdiv #textdiv{
+  border:solid 2px;
+  width:350px;
+  background-color: black;
+  color: white;
+  padding: 13px;
+  margin-left: 1rem;
+}
+
+#imgdiv #textdiv h1{
+    margin-top: 10px;
+    color:orange;
+    font-size:xx-large;
+}
+
+#textdiv2{
+    margin-top: -7rem;
+    display:flex;
+}
+
+#textdiv2 h1{
+    font-weight: bolder;
+    border:solid 1px transparent;
+    width:190px;
+}
+
+#textdiv2 h3{
+     border: solid 1px transparent;
+     overflow:hidden;
+     width: 330px;
+     font-size: medium;
+      margin-left: 5rem;
+      height: 80px;
+}
+
+#textdiv2 div button{
+    padding: 5px;
+    width: 150px;
+    margin-left: 5rem;
+    background-color: black;
+    color: #fff;
+}
+
+#lastpage{
+    display:flex;
+}
+
+#oldpc{
+    margin-top:2rem ;
+    padding: 3px;
+    display:flex;
+}
+
+#oldpc img{
+    width: 90px;
+}
+
+#oldpc div{
+    border: solid 1px transparent;
+    width:220px;
+    margin-left: 1rem;
+    font-size: medium;
+}
+
+#oldpc div h2{
+    font-weight: lighter;
+}
+
+h5:hover{
+    color:red;
+}
+
+li:hover{
+    color:red;
+}
+
+h4:hover{
+    color:orange;
+}
+/* mobile settings*/
+#mobile-nav button{
+    display:none;
+}
+
+#btn2{
+    display:none;
+}
+
+@media all and (max-width:767px) {
+
+        body{
+            padding:5px;
+        }
+
+       
+    
+    #nav-header nav ul{
+        display: none;
+        list-style: none;
+    }
+
+    #mobile-nav{
+        display: block;
+        position: fixed;
+        border:solid 1px transparent;
+        overflow: hidden;
+        opacity:0;
+        background-color:#fff;
+        margin-left:4rem;
+        height:490px;
+    }
+   
+
+    #mobile-nav button{
+        display:block;
+       margin-left: 10rem;
+       border:none;
+       font-size: x-large;
+    }
+
+    #btn2{
+        background-color: #fff;
+        position: fixed;
+        display:block;
+        border:none;
+        margin:0rem 0 0 0;
+        font-size: x-large;
+    }
+    
+
+    #mobile-nav nav ol{
+        display: block;
+        list-style: none;
+    }
+     
+    #mobile-nav nav ol li{
+        font-weight: bolder;
+        margin:10px 6rem 0 0;
+    }
+ 
+    #imgdiv img{
+        display: none;
+    }
+
+    #mobileimgdiv img{
+        display:block;
+        width:272px;
+    }
+
+    #imgdiv #textdiv{
+        width:272px;
+        display: block;
+        margin:17rem 0 0 0px;
+    }
+    
+    #imgdiv #textdiv h4{
+        font-size: large;
+     }
+
+    #imgdiv #textdiv p{
+        font-weight: lighter;
+        font-size: smaller;
+     }
+
+
+    #textdiv2{
+        margin-top:-41rem;
+        display:block;
+    }
+
+    #textdiv2 h3{
+        margin-left: 0px;
+        font-size: small;
+        height: 62px;
+        width: 260px;
+    }
+
+    #textdiv2 div button{
+        margin-left: 0px;
+        padding: 3px;
+    }
+
+    #lastpage{
+        margin-top: 30rem;
+        display:block;
+    }
+
+    #oldpc div h2{
+        font-weight: lighter;
+        font-size: x-small;
+    }
+
+    #oldpc div p{
+        font-size: x-small;
+    }
+    
+
+    #oldpc div h5{
+        font-size: small;
+    }
+
+    #oldpc div{
+        border: solid 1px transparent ;
+        width:150px;
+    }
+}
+
+
+
+
+@media all and (max-width:414px) {
+
+    #mobileimgdiv img{
+     display:block;
+     width:300px;
+ }
+
+ #mobilenav button{
+    margin-left:10rem;
+ }
+
+ #btn2{
+    margin-left: 17rem;
+ }
+
+  #mobile-nav{
+    margin-left:5.6rem;
+    height:800px;
+  }
+
+  #imgdiv #textdiv{
+    width:300px;
+  }
+
+  #imgdiv #textdiv p{
+    font-size: medium;
+ }
+
+    #oldpc div h2{
+        font-weight: lighter;
+        font-size: medium;
+    }
+
+    #oldpc div p{
+        font-size: small;
+    }
+
+
+    #oldpc div h5{
+        font-size: medium;
+    }
+
+    #oldpc div{
+        border: solid 1px transparent ;
+        width:179px;
+    }
+}
+
+@media all and (max-width:393px) {
+    #mobileimgdiv img{
+        display:block;
+        width:285px;
+    }
+
+    #imgdiv #textdiv{
+        width:285px;
+      }
+
+      #imgdiv #textdiv p{
+        font-size: small;
+     }
+
+     #mobile-nav{
+        margin-left:4.5rem;
+        height:900px;
+      }
+
+      #oldpc img{
+        width:60px;
+    }
+    
+}
+
+@media  screen and (max-width:375px) {
+
+    #btn2{
+       position: fixed;
+       left:-1rem;
+    }
+
+    #mobileimgdiv img{
+        width:270px;
+    }
+
+    #imgdiv #textdiv{
+        width:270px;
+    }
+}
+
+@media all and (max-width:360px) {
+    #btn2 #i {
+      position: fixed;
+      right:6rem;
+    }
+
+    #mobileimgdiv img{
+        width:258px;
+    }
+
+    #imgdiv #textdiv{
+        width:255px;
+    }
+
+  
+}
+
+@media all and (max-width:280px) {
+    #mobileimgdiv img{
+       width:200px;
+    }
+
+    #textdiv2  h3{
+        width:195px;
+        height:50px;
+        font-size: x-small;
+    }
+
+    #textdiv2  button{
+        font-size: x-small;
+    }
+
+    #textdiv{
+        width:1px;
+    }
+
+    #oldpc img{
+        width:50px
+    }
+
+    #oldpc h5{
+        font-size: x-small;
+    }
+}
